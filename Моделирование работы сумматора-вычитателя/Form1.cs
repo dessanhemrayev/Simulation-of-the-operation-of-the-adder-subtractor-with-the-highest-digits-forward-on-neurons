@@ -118,12 +118,12 @@ namespace Моделирование_работы_сумматора_вычит�
             int f1 = 0;
             int f2 = 0;
             int f3 = 0;
-            if (textBox3.Text=="-")
+            if (textBox3.Text=="1")
             {
                 f2 = 1;
             }
           
-            if (textBox4.Text == "-")
+            if (textBox4.Text == "1")
             {
                 f3 = 1;
             }
@@ -150,8 +150,7 @@ namespace Моделирование_работы_сумматора_вычит�
             else if (comparation1() == 2)
             {
                 label9.Text = "A<B";
-                label11.Text = "Число B";
-                label10.Text = "Число A";
+               
                 for (int j = 0; j < 32; j++)
                 {
 
@@ -301,8 +300,7 @@ namespace Моделирование_работы_сумматора_вычит�
             if (comparation1() == 1)
             {
                 label9.Text = "A>B";
-                label10.Text = "Число B";
-                label11.Text = "Число A";
+             
                 for (int j = 0; j < 32; j++)
                 {
 
@@ -318,8 +316,7 @@ namespace Моделирование_работы_сумматора_вычит�
             else if (comparation1() == 2)
             {
                 label9.Text = "A<B";
-                label11.Text = "Число B";
-                label10.Text = "Число A";
+             
                 for (int j = 0; j < 32; j++)
                 {
 
@@ -473,6 +470,7 @@ namespace Моделирование_работы_сумматора_вычит�
             for (int i = 31; i > 31 - 8 * step; i--)
             {
                 dataGridView4[i, 0].Value = "*";
+                dataGridView6[i, 0].Value = "*";
                 dataGridView5[i, 0].Value = "*";
                 dataGridView3[i, 0].Value = "*";
             }
